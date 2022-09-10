@@ -8,6 +8,7 @@
 
 body{
     background-color: #e5e7eb;
+    margin: 0;
 }
 
 .container{
@@ -44,7 +45,7 @@ input{
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     background-color: var(--secondary-color);
-    width: 7%;
+    width: 10%;
     padding: 1%;
     border-radius: 0.5rem;
 }
@@ -52,4 +53,35 @@ input{
 p{
     margin: 2%;
     font-size: large;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.fa {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline{
+    align-self: center;
+    display: inline-block;
+    padding: 0rem 0.5rem;
 }
