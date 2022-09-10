@@ -6,7 +6,12 @@ const outputDiv = document.querySelector("#output-div");
 function checkBirthdateIsLucky(){
     var DOB = dateOfBirth.value;
     var sum = calculateSum(DOB);
-    outputDiv.innerHTML = comparison(sum, luckyNumber.value);
+    if(sum&&DOB){
+        comparison(sum, luckyNumber.value);
+    }
+    else{
+        outputDiv.innerText="Please enter both the fields 😡";
+    }
 }
 
 function comparison(sum, luckyNumber){
