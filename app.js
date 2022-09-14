@@ -7,7 +7,7 @@ function checkBirthdateIsLucky(){
     var DOB = dateOfBirth.value;
     var sum = calculateSum(DOB);
     if(sum&&DOB){
-        comparison(sum, luckyNumber.value);
+        outputDiv.innerText = comparison(sum, luckyNumber.value);
     }
     else{
         outputDiv.innerText="Please enter both the fields 😡";
