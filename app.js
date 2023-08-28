@@ -13,22 +13,28 @@ function checkBirthdateIsLucky(){
         outputDiv.innerText="Please enter both the fields 😡";
     }
 }
-
-function comparison(sum, luckyNumber){
-    if(sum % luckyNumber == 0){
-        return ("Your birthday is lucky 🥳");
-    }
-    else {
-        return ("Your birthday is not so lucky 😔");
-    }
+if(luckyNumber.value !== "" && DOB !== ""){
+    outputDiv.innerText = comparison(sum, luckyNumber.value);
+}
+else{
+    outputDiv.innerText = "Please enter both your birthdate and a lucky number 😡";
+    //i will add user-friendly message when the user forgets to enter one or both fields. This is especially important for a better user experience. 
 }
 
+
+}
+
+
 function calculateSum(DOB){
-    DOB = DOB.replaceAll("-", "");
-    var sum = 0;
-    for(let i = 0; i < DOB.length; i++){
-        sum += Number(DOB.charAt(i));
+ DOB = DOB.replace(/\D/g, ""); // Remove all non-numeric characters
+ var sum = 0;
+ for(let i = 0; i < DOB.length; i++){
+ sum += Number(DOB.charAt(i));
     }
+    return sum;
+}
+
+    
     return sum;
 }
 
