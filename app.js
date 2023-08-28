@@ -2,7 +2,7 @@ const dateOfBirth = document.querySelector("#date-of-birth");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkButton = document.querySelector("#check-button");
 const outputDiv = document.querySelector("#output-div");
-
+cccccccccccccccc
 function checkBirthdateIsLucky(){
     var DOB = dateOfBirth.value;
     var sum = calculateSum(DOB);
